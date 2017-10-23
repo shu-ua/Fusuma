@@ -28,6 +28,15 @@
 		F211430D1EC22D84005BEB60 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21142FC1EC22D84005BEB60 /* FSImageCropView.swift */; };
 		F211430E1EC22D84005BEB60 /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21142FD1EC22D84005BEB60 /* FSVideoCameraView.swift */; };
 		F211430F1EC22D84005BEB60 /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21142FE1EC22D84005BEB60 /* FSVideoCameraView.xib */; };
+		F21D0A301F9E8BA100CE1419 /* NextLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A261F9E8B9C00CE1419 /* NextLevel.swift */; };
+		F21D0A311F9E8BA500CE1419 /* NextLevel+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A271F9E8B9C00CE1419 /* NextLevel+AVFoundation.swift */; };
+		F21D0A321F9E8BA900CE1419 /* NextLevel+CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A281F9E8B9C00CE1419 /* NextLevel+CoreImage.swift */; };
+		F21D0A331F9E8BAB00CE1419 /* NextLevel+CoreMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A291F9E8B9C00CE1419 /* NextLevel+CoreMedia.swift */; };
+		F21D0A341F9E8BAD00CE1419 /* NextLevel+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A2A1F9E8B9C00CE1419 /* NextLevel+Foundation.swift */; };
+		F21D0A351F9E8BAF00CE1419 /* NextLevel+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A2B1F9E8B9C00CE1419 /* NextLevel+Metadata.swift */; };
+		F21D0A361F9E8BB100CE1419 /* NextLevelClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A2C1F9E8B9C00CE1419 /* NextLevelClip.swift */; };
+		F21D0A371F9E8BB400CE1419 /* NextLevelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A2D1F9E8B9C00CE1419 /* NextLevelConfiguration.swift */; };
+		F21D0A381F9E8BB600CE1419 /* NextLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A2E1F9E8B9C00CE1419 /* NextLevelSession.swift */; };
 		F2C2BA111ECB7263005A362A /* FusumaModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2BA0F1ECB7263005A362A /* FusumaModeButton.swift */; };
 		F2DABC261EC2329100B42961 /* FusumaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DABC241EC2329100B42961 /* FusumaHelper.swift */; };
 		F2DABC2A1EC23A3F00B42961 /* FSVideoAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DABC291EC23A3F00B42961 /* FSVideoAlbumViewCell.xib */; };
@@ -58,6 +67,16 @@
 		F21142FC1EC22D84005BEB60 /* FSImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSImageCropView.swift; sourceTree = "<group>"; };
 		F21142FD1EC22D84005BEB60 /* FSVideoCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoCameraView.swift; sourceTree = "<group>"; };
 		F21142FE1EC22D84005BEB60 /* FSVideoCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSVideoCameraView.xib; sourceTree = "<group>"; };
+		F21D0A251F9E8B9C00CE1419 /* NextLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextLevel.h; sourceTree = "<group>"; };
+		F21D0A261F9E8B9C00CE1419 /* NextLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevel.swift; sourceTree = "<group>"; };
+		F21D0A271F9E8B9C00CE1419 /* NextLevel+AVFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+AVFoundation.swift"; sourceTree = "<group>"; };
+		F21D0A281F9E8B9C00CE1419 /* NextLevel+CoreImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+CoreImage.swift"; sourceTree = "<group>"; };
+		F21D0A291F9E8B9C00CE1419 /* NextLevel+CoreMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+CoreMedia.swift"; sourceTree = "<group>"; };
+		F21D0A2A1F9E8B9C00CE1419 /* NextLevel+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Foundation.swift"; sourceTree = "<group>"; };
+		F21D0A2B1F9E8B9C00CE1419 /* NextLevel+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Metadata.swift"; sourceTree = "<group>"; };
+		F21D0A2C1F9E8B9C00CE1419 /* NextLevelClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelClip.swift; sourceTree = "<group>"; };
+		F21D0A2D1F9E8B9C00CE1419 /* NextLevelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelConfiguration.swift; sourceTree = "<group>"; };
+		F21D0A2E1F9E8B9C00CE1419 /* NextLevelSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelSession.swift; sourceTree = "<group>"; };
 		F2C2BA0F1ECB7263005A362A /* FusumaModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusumaModeButton.swift; sourceTree = "<group>"; };
 		F2C5BE32AE013FF3231733EE /* Pods_FusumaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FusumaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DABC241EC2329100B42961 /* FusumaHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusumaHelper.swift; sourceTree = "<group>"; };
@@ -140,6 +159,7 @@
 		F21142FF1EC22D84005BEB60 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F21D0A2F1F9E8B9C00CE1419 /* NextLevel */,
 				F2C2BA101ECB7263005A362A /* Reusable */,
 				F21142F31EC22D84005BEB60 /* AlbumCells */,
 				F2DABC251EC2329100B42961 /* Helper */,
@@ -157,6 +177,23 @@
 			);
 			name = Sources;
 			path = ../../Sources;
+			sourceTree = "<group>";
+		};
+		F21D0A2F1F9E8B9C00CE1419 /* NextLevel */ = {
+			isa = PBXGroup;
+			children = (
+				F21D0A251F9E8B9C00CE1419 /* NextLevel.h */,
+				F21D0A261F9E8B9C00CE1419 /* NextLevel.swift */,
+				F21D0A271F9E8B9C00CE1419 /* NextLevel+AVFoundation.swift */,
+				F21D0A281F9E8B9C00CE1419 /* NextLevel+CoreImage.swift */,
+				F21D0A291F9E8B9C00CE1419 /* NextLevel+CoreMedia.swift */,
+				F21D0A2A1F9E8B9C00CE1419 /* NextLevel+Foundation.swift */,
+				F21D0A2B1F9E8B9C00CE1419 /* NextLevel+Metadata.swift */,
+				F21D0A2C1F9E8B9C00CE1419 /* NextLevelClip.swift */,
+				F21D0A2D1F9E8B9C00CE1419 /* NextLevelConfiguration.swift */,
+				F21D0A2E1F9E8B9C00CE1419 /* NextLevelSession.swift */,
+			);
+			name = NextLevel;
 			sourceTree = "<group>";
 		};
 		F2C2BA101ECB7263005A362A /* Reusable */ = {
@@ -308,13 +345,22 @@
 			files = (
 				52412AC61CA61C9F0073C4BE /* ViewController.swift in Sources */,
 				F21143011EC22D84005BEB60 /* FSImageAlbumViewCell.swift in Sources */,
+				F21D0A321F9E8BA900CE1419 /* NextLevel+CoreImage.swift in Sources */,
 				F2C2BA111ECB7263005A362A /* FusumaModeButton.swift in Sources */,
+				F21D0A331F9E8BAB00CE1419 /* NextLevel+CoreMedia.swift in Sources */,
 				F211430A1EC22D84005BEB60 /* FSCameraView.swift in Sources */,
+				F21D0A371F9E8BB400CE1419 /* NextLevelConfiguration.swift in Sources */,
 				F21143031EC22D84005BEB60 /* FSVideoAlbumViewCell.swift in Sources */,
+				F21D0A301F9E8BA100CE1419 /* NextLevel.swift in Sources */,
 				F211430C1EC22D84005BEB60 /* FSConstants.swift in Sources */,
+				F21D0A351F9E8BAF00CE1419 /* NextLevel+Metadata.swift in Sources */,
 				F211430E1EC22D84005BEB60 /* FSVideoCameraView.swift in Sources */,
 				F2DABC261EC2329100B42961 /* FusumaHelper.swift in Sources */,
 				F21143061EC22D84005BEB60 /* FusumaViewController.swift in Sources */,
+				F21D0A381F9E8BB600CE1419 /* NextLevelSession.swift in Sources */,
+				F21D0A361F9E8BB100CE1419 /* NextLevelClip.swift in Sources */,
+				F21D0A341F9E8BAD00CE1419 /* NextLevel+Foundation.swift in Sources */,
+				F21D0A311F9E8BA500CE1419 /* NextLevel+AVFoundation.swift in Sources */,
 				52412AC41CA61C9F0073C4BE /* AppDelegate.swift in Sources */,
 				F21143081EC22D84005BEB60 /* FSAlbumView.swift in Sources */,
 				F21143001EC22D84005BEB60 /* FSAlbumViewCell.swift in Sources */,
