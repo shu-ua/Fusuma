@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import NextLevel
 
 @objc protocol FSVideoCameraViewDelegate: class {
     func videoFinished(withFileURL fileURL: URL)
@@ -244,6 +243,15 @@ final class FSVideoCameraView: UIView {
 }
 
 extension FSVideoCameraView: NextLevelVideoDelegate {
+    
+    func nextLevel(_ nextLevel: NextLevel, didAppendVideoPixelBuffer pixelBuffer: CVPixelBuffer, timestamp: TimeInterval, inSession session: NextLevelSession) {
+        
+    }
+    
+    func nextLevel(_ nextLevel: NextLevel, didSkipVideoPixelBuffer pixelBuffer: CVPixelBuffer, timestamp: TimeInterval, inSession session: NextLevelSession) {
+        
+    }
+    
     
     func nextLevel(_ nextLevel: NextLevel, willProcessRawVideoSampleBuffer sampleBuffer: CMSampleBuffer, onQueue queue: DispatchQueue) {
         

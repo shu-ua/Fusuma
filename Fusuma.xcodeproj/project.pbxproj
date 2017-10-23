@@ -23,6 +23,16 @@
 		EDDC0B5B1D0511F2009135DB /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDC0B531D0511F2009135DB /* FSImageCropView.swift */; };
 		EDDC0B5D1D051245009135DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDC0B5C1D051245009135DB /* Assets.xcassets */; };
 		F21142ED1EC22C9A005BEB60 /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21142EC1EC22C9A005BEB60 /* FSAlbumViewCell.swift */; };
+		F21D0A4E1F9E8F7800CE1419 /* NextLevel+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A441F9E8F7800CE1419 /* NextLevel+AVFoundation.swift */; };
+		F21D0A4F1F9E8F7800CE1419 /* NextLevel+CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A451F9E8F7800CE1419 /* NextLevel+CoreImage.swift */; };
+		F21D0A501F9E8F7800CE1419 /* NextLevel+CoreMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A461F9E8F7800CE1419 /* NextLevel+CoreMedia.swift */; };
+		F21D0A511F9E8F7800CE1419 /* NextLevel+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A471F9E8F7800CE1419 /* NextLevel+Foundation.swift */; };
+		F21D0A521F9E8F7800CE1419 /* NextLevel+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A481F9E8F7800CE1419 /* NextLevel+Metadata.swift */; };
+		F21D0A531F9E8F7800CE1419 /* NextLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = F21D0A491F9E8F7800CE1419 /* NextLevel.h */; };
+		F21D0A541F9E8F7800CE1419 /* NextLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A4A1F9E8F7800CE1419 /* NextLevel.swift */; };
+		F21D0A551F9E8F7800CE1419 /* NextLevelClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A4B1F9E8F7800CE1419 /* NextLevelClip.swift */; };
+		F21D0A561F9E8F7800CE1419 /* NextLevelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A4C1F9E8F7800CE1419 /* NextLevelConfiguration.swift */; };
+		F21D0A571F9E8F7800CE1419 /* NextLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0A4D1F9E8F7800CE1419 /* NextLevelSession.swift */; };
 		F2C2BA0D1ECB6E19005A362A /* FusumaModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2BA0C1ECB6E19005A362A /* FusumaModeButton.swift */; };
 		F2C59C151EC2269600D34955 /* FSVideoAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C59C131EC223CA00D34955 /* FSVideoAlbumViewCell.swift */; };
 		F2DABC231EC2328500B42961 /* FusumaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DABC211EC2310200B42961 /* FusumaHelper.swift */; };
@@ -50,6 +60,16 @@
 		EDDC0B531D0511F2009135DB /* FSImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSImageCropView.swift; sourceTree = "<group>"; };
 		EDDC0B5C1D051245009135DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21142EC1EC22C9A005BEB60 /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		F21D0A441F9E8F7800CE1419 /* NextLevel+AVFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+AVFoundation.swift"; sourceTree = "<group>"; };
+		F21D0A451F9E8F7800CE1419 /* NextLevel+CoreImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+CoreImage.swift"; sourceTree = "<group>"; };
+		F21D0A461F9E8F7800CE1419 /* NextLevel+CoreMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+CoreMedia.swift"; sourceTree = "<group>"; };
+		F21D0A471F9E8F7800CE1419 /* NextLevel+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Foundation.swift"; sourceTree = "<group>"; };
+		F21D0A481F9E8F7800CE1419 /* NextLevel+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Metadata.swift"; sourceTree = "<group>"; };
+		F21D0A491F9E8F7800CE1419 /* NextLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextLevel.h; sourceTree = "<group>"; };
+		F21D0A4A1F9E8F7800CE1419 /* NextLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevel.swift; sourceTree = "<group>"; };
+		F21D0A4B1F9E8F7800CE1419 /* NextLevelClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelClip.swift; sourceTree = "<group>"; };
+		F21D0A4C1F9E8F7800CE1419 /* NextLevelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelConfiguration.swift; sourceTree = "<group>"; };
+		F21D0A4D1F9E8F7800CE1419 /* NextLevelSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelSession.swift; sourceTree = "<group>"; };
 		F2C2BA0C1ECB6E19005A362A /* FusumaModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusumaModeButton.swift; sourceTree = "<group>"; };
 		F2C59C131EC223CA00D34955 /* FSVideoAlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoAlbumViewCell.swift; sourceTree = "<group>"; };
 		F2DABC211EC2310200B42961 /* FusumaHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusumaHelper.swift; sourceTree = "<group>"; };
@@ -110,6 +130,7 @@
 		52412A9E1CA6114F0073C4BE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F21D0A431F9E8F7800CE1419 /* NextLevel */,
 				F2C2BA0E1ECB6E1D005A362A /* Reusable */,
 				F2C071DB1EC21F810000564E /* AlbumCells */,
 				F2DABC201EC230F100B42961 /* Helper */,
@@ -134,6 +155,23 @@
 				17F2E137C2E43E1BB2F2C589 /* Pods_Fusuma.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F21D0A431F9E8F7800CE1419 /* NextLevel */ = {
+			isa = PBXGroup;
+			children = (
+				F21D0A441F9E8F7800CE1419 /* NextLevel+AVFoundation.swift */,
+				F21D0A451F9E8F7800CE1419 /* NextLevel+CoreImage.swift */,
+				F21D0A461F9E8F7800CE1419 /* NextLevel+CoreMedia.swift */,
+				F21D0A471F9E8F7800CE1419 /* NextLevel+Foundation.swift */,
+				F21D0A481F9E8F7800CE1419 /* NextLevel+Metadata.swift */,
+				F21D0A491F9E8F7800CE1419 /* NextLevel.h */,
+				F21D0A4A1F9E8F7800CE1419 /* NextLevel.swift */,
+				F21D0A4B1F9E8F7800CE1419 /* NextLevelClip.swift */,
+				F21D0A4C1F9E8F7800CE1419 /* NextLevelConfiguration.swift */,
+				F21D0A4D1F9E8F7800CE1419 /* NextLevelSession.swift */,
+			);
+			path = NextLevel;
 			sourceTree = "<group>";
 		};
 		F2C071DB1EC21F810000564E /* AlbumCells */ = {
@@ -171,6 +209,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D0A531F9E8F7800CE1419 /* NextLevel.h in Headers */,
 				52412A971CA6114A0073C4BE /* Fusuma.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,15 +326,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D0A571F9E8F7800CE1419 /* NextLevelSession.swift in Sources */,
 				F2DABC231EC2328500B42961 /* FusumaHelper.swift in Sources */,
 				EDDC0B3E1D04F53E009135DB /* FSVideoCameraView.swift in Sources */,
 				F2C59C151EC2269600D34955 /* FSVideoAlbumViewCell.swift in Sources */,
+				F21D0A4F1F9E8F7800CE1419 /* NextLevel+CoreImage.swift in Sources */,
 				EDDC0B581D0511F2009135DB /* FSCameraView.swift in Sources */,
 				EDDC0B4A1D0511E7009135DB /* FusumaViewController.swift in Sources */,
+				F21D0A521F9E8F7800CE1419 /* NextLevel+Metadata.swift in Sources */,
 				EDDC0B541D0511F2009135DB /* FSAlbumView.swift in Sources */,
 				F2C2BA0D1ECB6E19005A362A /* FusumaModeButton.swift in Sources */,
+				F21D0A4E1F9E8F7800CE1419 /* NextLevel+AVFoundation.swift in Sources */,
+				F21D0A511F9E8F7800CE1419 /* NextLevel+Foundation.swift in Sources */,
+				F21D0A561F9E8F7800CE1419 /* NextLevelConfiguration.swift in Sources */,
+				F21D0A501F9E8F7800CE1419 /* NextLevel+CoreMedia.swift in Sources */,
+				F21D0A541F9E8F7800CE1419 /* NextLevel.swift in Sources */,
 				EDDC0B5A1D0511F2009135DB /* FSConstants.swift in Sources */,
 				EDDC0B5B1D0511F2009135DB /* FSImageCropView.swift in Sources */,
+				F21D0A551F9E8F7800CE1419 /* NextLevelClip.swift in Sources */,
 				EDDC0B561D0511F2009135DB /* FSImageAlbumViewCell.swift in Sources */,
 				F21142ED1EC22C9A005BEB60 /* FSAlbumViewCell.swift in Sources */,
 			);
