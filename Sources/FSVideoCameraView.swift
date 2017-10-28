@@ -39,7 +39,7 @@ final class FSVideoCameraView: UIView {
         let formatter = DateComponentsFormatter()
         formatter.zeroFormattingBehavior = .pad
         formatter.unitsStyle = .positional
-        formatter.allowedUnits = [.hour, .minute, .second]
+        formatter.allowedUnits = [.minute, .second]
         return formatter
     }()
     
@@ -120,7 +120,6 @@ final class FSVideoCameraView: UIView {
         
         let nextLevel = NextLevel.shared
         
-        //
         if nextLevel.authorizationStatus(forMediaType: AVMediaType.video) == .authorized &&
             nextLevel.authorizationStatus(forMediaType: AVMediaType.audio) == .authorized {
             if NextLevel.shared.session == nil {
@@ -145,7 +144,6 @@ final class FSVideoCameraView: UIView {
     }
     
     @IBAction func shotButtonPressed(_ sender: UIButton) {
-        
         self.toggleRecording()
     }
     
@@ -164,10 +162,12 @@ final class FSVideoCameraView: UIView {
         if self.isRecording {
             self.flipButton.isEnabled = false
             self.flashButton.isEnabled = false
+            UIApplication.shared.isIdleTimerDisabled = true
             NextLevel.shared.record()
         } else {
             self.flipButton.isEnabled = true
             self.flashButton.isEnabled = true
+            UIApplication.shared.isIdleTimerDisabled = false
             NextLevel.shared.pause()
         }
         return
