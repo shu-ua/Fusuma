@@ -7,6 +7,6 @@ xcodeproj 'Fusuma/Fusuma'
 xcodeproj 'Example/FusumaExample' 
   use_frameworks!
 
-pod "NextLevel", "~> 0.8.4"
+pod "NextLevel", "~> 0.9.1"
 
 end

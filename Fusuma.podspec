@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
   s.resources    = ['Sources/Assets.xcassets', 'Sources/**/*.xib']
-  s.dependency "NextLevel", "~> 0.8.4"
+  s.dependency "NextLevel", "~> 0.9.1"
 end
 
