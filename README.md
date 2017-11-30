@@ -10,8 +10,7 @@ Add `pod 'Fusuma'` to your `Podfile` and run `pod install`. Also add `use_framew
 
 ```
 use_frameworks!
-pod 'Fusuma'
-pod "NextLevel", :git => 'https://github.com/shu-ua/NextLevel.git'
+pod 'Fusuma', :git => 'https://github.com/shu-ua/Fusuma.git'
 ```
 
 ## Fusuma Usage
