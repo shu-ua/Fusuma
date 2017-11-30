@@ -36,6 +36,7 @@ public protocol FusumaDelegate: class {
     func fusumaVideoCompleted(withFileURL fileURL: URL)
     func fusumaCameraRollUnauthorized()
     func fusumaVideoCompleted(withPHAsset phAsset: PHAsset)
+    func fusumaFailed(_ withErrorMessage: String)
     
     // MARK: Optional
     func fusumaDismissedWithImage(_ image: UIImage, source: FusumaMode)
@@ -340,11 +341,15 @@ public class FusumaViewController: UIViewController {
                                                             result, info in
                                                             
                                                             DispatchQueue.main.async(execute: {
-                                                                self.delegate?.fusumaImageSelected(result!, source: self.mode)
-                                                                
-                                                                self.dismiss(animated: true, completion: {
-                                                                    self.delegate?.fusumaDismissedWithImage(result!, source: self.mode)
-                                                                })
+                                                                if let image = result {
+                                                                    self.delegate?.fusumaImageSelected(image, source: self.mode)
+                                                                    
+                                                                    self.dismiss(animated: true, completion: {
+                                                                        self.delegate?.fusumaDismissedWithImage(image, source: self.mode)
+                                                                    })
+                                                                } else {
+                                                                    self.delegate?.fusumaFailed("We got problem with selected image. Please, make sure that all gallery permissions are allowed in the device settings.")
+                                                                }
                                                             })
                     }
                 })
@@ -361,6 +366,7 @@ public class FusumaViewController: UIViewController {
 }
 
 extension FusumaViewController: FSAlbumViewDelegate, FSCameraViewDelegate, FSVideoCameraViewDelegate {
+    
     public func getCropHeightRatio() -> CGFloat {
         return cropHeightRatio
     }
@@ -373,6 +379,10 @@ extension FusumaViewController: FSAlbumViewDelegate, FSCameraViewDelegate, FSVid
             
             self.delegate?.fusumaDismissedWithImage(image, source: self.mode)
         })
+    }
+    
+    func cameraFailed(_ withErrorMessage: String) {
+        self.delegate?.fusumaFailed(withErrorMessage)
     }
     
     public func albumViewCameraRollAuthorized() {

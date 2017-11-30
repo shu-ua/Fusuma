@@ -12,6 +12,7 @@ import CoreMotion
 
 @objc protocol FSCameraViewDelegate: class {
     func cameraShotFinished(_ image: UIImage)
+    func cameraFailed(_ withErrorMessage: String)
 }
 
 final class FSCameraView: UIView, UIGestureRecognizerDelegate {
@@ -90,11 +91,16 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
             }
         }
         
+        guard let device = device else {
+            self.delegate?.cameraFailed("We got problem with detecting video input on your device. Please check restrictions on your settings.")
+            return
+        }
+        
         do {
             
             if let session = session {
                 
-                videoInput = try AVCaptureDeviceInput(device: device!)
+                videoInput = try AVCaptureDeviceInput(device: device)
                 
                 session.addInput(videoInput!)
                 
@@ -209,7 +215,16 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
                 
                 self.stopCamera()
                 
-                let data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer!)
+                guard let buffer = buffer else {
+                    if let error = error {
+                        self.delegate?.cameraFailed(error.localizedDescription)
+                    } else {
+                        self.delegate?.cameraFailed("We got problem with image capturing buffer. Please check camera permissions in device settings.")
+                    }
+                    return
+                }
+                
+                let data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer)
                 
                 if let image = UIImage(data: data!), let delegate = self.delegate {
                     

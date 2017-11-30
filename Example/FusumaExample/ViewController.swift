@@ -131,6 +131,10 @@ class ViewController: UIViewController, FusumaDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    func fusumaFailed(_ withErrorMessage: String) {
+        print(withErrorMessage)
+    }
+    
     func fusumaClosed() {
         print("Called when the FusumaViewController disappeared")
     }
